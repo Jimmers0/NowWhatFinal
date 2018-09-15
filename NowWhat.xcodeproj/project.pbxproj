@@ -16,6 +16,13 @@
 		9DEC01AC214CE2D6004BC4F5 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC01AB214CE2D6004BC4F5 /* DetailVC.swift */; };
 		9DEC01AE214CE2E1004BC4F5 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC01AD214CE2E1004BC4F5 /* AddTaskVC.swift */; };
 		9DEC01B0214CE2F3004BC4F5 /* CustomControllerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC01AF214CE2F3004BC4F5 /* CustomControllerClass.swift */; };
+		9DEC01B4214CE328004BC4F5 /* MasterICloudVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC01B2214CE328004BC4F5 /* MasterICloudVC.swift */; };
+		9DEC01B5214CE328004BC4F5 /* AddCloudTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC01B3214CE328004BC4F5 /* AddCloudTaskVC.swift */; };
+		9DEC01BD214CE340004BC4F5 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC01B7214CE33F004BC4F5 /* CoreDataHelper.swift */; };
+		9DEC01BE214CE340004BC4F5 /* Tasks+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC01B8214CE33F004BC4F5 /* Tasks+CoreDataProperties.swift */; };
+		9DEC01BF214CE340004BC4F5 /* Tasks+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC01B9214CE33F004BC4F5 /* Tasks+CoreDataClass.swift */; };
+		9DEC01C0214CE340004BC4F5 /* CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC01BA214CE33F004BC4F5 /* CoreDataClass.swift */; };
+		9DEC01C1214CE340004BC4F5 /* NowWhat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC01BB214CE33F004BC4F5 /* NowWhat.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,13 @@
 		9DEC01AB214CE2D6004BC4F5 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		9DEC01AD214CE2E1004BC4F5 /* AddTaskVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
 		9DEC01AF214CE2F3004BC4F5 /* CustomControllerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomControllerClass.swift; sourceTree = "<group>"; };
+		9DEC01B2214CE328004BC4F5 /* MasterICloudVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterICloudVC.swift; sourceTree = "<group>"; };
+		9DEC01B3214CE328004BC4F5 /* AddCloudTaskVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCloudTaskVC.swift; sourceTree = "<group>"; };
+		9DEC01B7214CE33F004BC4F5 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		9DEC01B8214CE33F004BC4F5 /* Tasks+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tasks+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9DEC01B9214CE33F004BC4F5 /* Tasks+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tasks+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9DEC01BA214CE33F004BC4F5 /* CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataClass.swift; sourceTree = "<group>"; };
+		9DEC01BC214CE33F004BC4F5 /* NowWhat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NowWhat.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +76,49 @@
 		9DEC0194214CDFA0004BC4F5 /* NowWhat */ = {
 			isa = PBXGroup;
 			children = (
-				9DEC0195214CDFA0004BC4F5 /* AppDelegate.swift */,
-				9DEC01A7214CE2BB004BC4F5 /* MasterVC.swift */,
-				9DEC01A9214CE2C5004BC4F5 /* TaskTableViewCell.swift */,
-				9DEC01AB214CE2D6004BC4F5 /* DetailVC.swift */,
-				9DEC01AD214CE2E1004BC4F5 /* AddTaskVC.swift */,
-				9DEC01AF214CE2F3004BC4F5 /* CustomControllerClass.swift */,
+				9DEC01B6214CE33F004BC4F5 /* SharedCoreData */,
+				9DEC01B1214CE328004BC4F5 /* iCloudNotes */,
+				9DEC01C3214CE368004BC4F5 /* CoreDataNotes */,
 				9DEC0199214CDFA0004BC4F5 /* Main.storyboard */,
 				9DEC019C214CDFA2004BC4F5 /* Assets.xcassets */,
 				9DEC019E214CDFA2004BC4F5 /* LaunchScreen.storyboard */,
 				9DEC01A1214CDFA2004BC4F5 /* Info.plist */,
 			);
 			path = NowWhat;
+			sourceTree = "<group>";
+		};
+		9DEC01B1214CE328004BC4F5 /* iCloudNotes */ = {
+			isa = PBXGroup;
+			children = (
+				9DEC01B2214CE328004BC4F5 /* MasterICloudVC.swift */,
+				9DEC01B3214CE328004BC4F5 /* AddCloudTaskVC.swift */,
+			);
+			path = iCloudNotes;
+			sourceTree = "<group>";
+		};
+		9DEC01B6214CE33F004BC4F5 /* SharedCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9DEC01B7214CE33F004BC4F5 /* CoreDataHelper.swift */,
+				9DEC01B8214CE33F004BC4F5 /* Tasks+CoreDataProperties.swift */,
+				9DEC01B9214CE33F004BC4F5 /* Tasks+CoreDataClass.swift */,
+				9DEC01BA214CE33F004BC4F5 /* CoreDataClass.swift */,
+				9DEC01BB214CE33F004BC4F5 /* NowWhat.xcdatamodeld */,
+			);
+			path = SharedCoreData;
+			sourceTree = "<group>";
+		};
+		9DEC01C3214CE368004BC4F5 /* CoreDataNotes */ = {
+			isa = PBXGroup;
+			children = (
+				9DEC0195214CDFA0004BC4F5 /* AppDelegate.swift */,
+				9DEC01A7214CE2BB004BC4F5 /* MasterVC.swift */,
+				9DEC01A9214CE2C5004BC4F5 /* TaskTableViewCell.swift */,
+				9DEC01AB214CE2D6004BC4F5 /* DetailVC.swift */,
+				9DEC01AD214CE2E1004BC4F5 /* AddTaskVC.swift */,
+				9DEC01AF214CE2F3004BC4F5 /* CustomControllerClass.swift */,
+			);
+			path = CoreDataNotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +194,16 @@
 			files = (
 				9DEC01AA214CE2C6004BC4F5 /* TaskTableViewCell.swift in Sources */,
 				9DEC01AC214CE2D6004BC4F5 /* DetailVC.swift in Sources */,
+				9DEC01C1214CE340004BC4F5 /* NowWhat.xcdatamodeld in Sources */,
+				9DEC01BE214CE340004BC4F5 /* Tasks+CoreDataProperties.swift in Sources */,
+				9DEC01C0214CE340004BC4F5 /* CoreDataClass.swift in Sources */,
 				9DEC01AE214CE2E1004BC4F5 /* AddTaskVC.swift in Sources */,
+				9DEC01B5214CE328004BC4F5 /* AddCloudTaskVC.swift in Sources */,
+				9DEC01B4214CE328004BC4F5 /* MasterICloudVC.swift in Sources */,
 				9DEC01B0214CE2F3004BC4F5 /* CustomControllerClass.swift in Sources */,
+				9DEC01BD214CE340004BC4F5 /* CoreDataHelper.swift in Sources */,
 				9DEC01A8214CE2BB004BC4F5 /* MasterVC.swift in Sources */,
+				9DEC01BF214CE340004BC4F5 /* Tasks+CoreDataClass.swift in Sources */,
 				9DEC0196214CDFA0004BC4F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +402,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9DEC01BB214CE33F004BC4F5 /* NowWhat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9DEC01BC214CE33F004BC4F5 /* NowWhat.xcdatamodel */,
+			);
+			currentVersion = 9DEC01BC214CE33F004BC4F5 /* NowWhat.xcdatamodel */;
+			path = NowWhat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9DEC018A214CDFA0004BC4F5 /* Project object */;
 }

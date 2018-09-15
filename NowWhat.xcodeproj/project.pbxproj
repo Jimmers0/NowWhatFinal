@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B8E20B53C0C619B7F0C4516 /* Pods_NowWhat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E131F7A11364BC15831E242 /* Pods_NowWhat.framework */; };
+		7BEAA83854516799B5B24C43 /* Pods_NowWhatTaskExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D68EF0C1AD25549ADBC123 /* Pods_NowWhatTaskExt.framework */; };
 		9DEC0196214CDFA0004BC4F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC0195214CDFA0004BC4F5 /* AppDelegate.swift */; };
 		9DEC019B214CDFA0004BC4F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEC0199214CDFA0004BC4F5 /* Main.storyboard */; };
 		9DEC019D214CDFA2004BC4F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEC019C214CDFA2004BC4F5 /* Assets.xcassets */; };
@@ -55,6 +57,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06C0A908D12865861C60B6E3 /* Pods-NowWhatTaskExt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NowWhatTaskExt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NowWhatTaskExt/Pods-NowWhatTaskExt.debug.xcconfig"; sourceTree = "<group>"; };
+		3E131F7A11364BC15831E242 /* Pods_NowWhat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NowWhat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BDCD76FA0E3078F8E9559D8 /* Pods-NowWhat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NowWhat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NowWhat/Pods-NowWhat.debug.xcconfig"; sourceTree = "<group>"; };
 		9DEC0192214CDFA0004BC4F5 /* NowWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NowWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEC0195214CDFA0004BC4F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DEC019A214CDFA0004BC4F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +85,9 @@
 		9DEC01DA214CE3EB004BC4F5 /* NowWhatTaskExt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NowWhatTaskExt-Bridging-Header.h"; sourceTree = "<group>"; };
 		9DEC01DB214CE3EC004BC4F5 /* TaskExtCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskExtCell.swift; sourceTree = "<group>"; };
 		9DEC01DC214CE3EC004BC4F5 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		C486DAD70E1887E6FB5B8960 /* Pods-NowWhatTaskExt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NowWhatTaskExt.release.xcconfig"; path = "Pods/Target Support Files/Pods-NowWhatTaskExt/Pods-NowWhatTaskExt.release.xcconfig"; sourceTree = "<group>"; };
+		DD49A1B733E6D2770CCCF5CD /* Pods-NowWhat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NowWhat.release.xcconfig"; path = "Pods/Target Support Files/Pods-NowWhat/Pods-NowWhat.release.xcconfig"; sourceTree = "<group>"; };
+		E1D68EF0C1AD25549ADBC123 /* Pods_NowWhatTaskExt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NowWhatTaskExt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B8E20B53C0C619B7F0C4516 /* Pods_NowWhat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,12 +104,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DEC01CB214CE3C5004BC4F5 /* NotificationCenter.framework in Frameworks */,
+				7BEAA83854516799B5B24C43 /* Pods_NowWhatTaskExt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DB35D6863084C43B26559F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BDCD76FA0E3078F8E9559D8 /* Pods-NowWhat.debug.xcconfig */,
+				DD49A1B733E6D2770CCCF5CD /* Pods-NowWhat.release.xcconfig */,
+				06C0A908D12865861C60B6E3 /* Pods-NowWhatTaskExt.debug.xcconfig */,
+				C486DAD70E1887E6FB5B8960 /* Pods-NowWhatTaskExt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9DEC0189214CDFA0004BC4F5 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +129,7 @@
 				9DEC01CC214CE3C5004BC4F5 /* NowWhatTaskExt */,
 				9DEC01C9214CE3C5004BC4F5 /* Frameworks */,
 				9DEC0193214CDFA0004BC4F5 /* Products */,
+				2DB35D6863084C43B26559F3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				9DEC01CA214CE3C5004BC4F5 /* NotificationCenter.framework */,
+				3E131F7A11364BC15831E242 /* Pods_NowWhat.framework */,
+				E1D68EF0C1AD25549ADBC123 /* Pods_NowWhatTaskExt.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,10 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DEC01A4214CDFA2004BC4F5 /* Build configuration list for PBXNativeTarget "NowWhat" */;
 			buildPhases = (
+				53E2F4C42DBC5317E69E92A5 /* [CP] Check Pods Manifest.lock */,
 				9DEC018E214CDFA0004BC4F5 /* Sources */,
 				9DEC018F214CDFA0004BC4F5 /* Frameworks */,
 				9DEC0190214CDFA0004BC4F5 /* Resources */,
 				9DEC01D9214CE3C5004BC4F5 /* Embed App Extensions */,
+				556818F350FB119E86FB47B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DEC01D6214CE3C5004BC4F5 /* Build configuration list for PBXNativeTarget "NowWhatTaskExt" */;
 			buildPhases = (
+				4D958667270104CE880F3AB3 /* [CP] Check Pods Manifest.lock */,
 				9DEC01C4214CE3C5004BC4F5 /* Sources */,
 				9DEC01C5214CE3C5004BC4F5 /* Frameworks */,
 				9DEC01C6214CE3C5004BC4F5 /* Resources */,
@@ -285,6 +312,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D958667270104CE880F3AB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NowWhatTaskExt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53E2F4C42DBC5317E69E92A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NowWhat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		556818F350FB119E86FB47B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NowWhat/Pods-NowWhat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NowWhat/Pods-NowWhat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DEC018E214CDFA0004BC4F5 /* Sources */ = {
@@ -470,6 +556,7 @@
 		};
 		9DEC01A5214CDFA2004BC4F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BDCD76FA0E3078F8E9559D8 /* Pods-NowWhat.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -489,6 +576,7 @@
 		};
 		9DEC01A6214CDFA2004BC4F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD49A1B733E6D2770CCCF5CD /* Pods-NowWhat.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -508,6 +596,7 @@
 		};
 		9DEC01D7214CE3C5004BC4F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C0A908D12865861C60B6E3 /* Pods-NowWhatTaskExt.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +619,7 @@
 		};
 		9DEC01D8214CE3C5004BC4F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C486DAD70E1887E6FB5B8960 /* Pods-NowWhatTaskExt.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

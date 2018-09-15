@@ -14,5 +14,7 @@ target 'NowWhatTaskExt' do
   use_frameworks!
 
   # Pods for NowWhatTaskExt
+pod 'Firebase/Core'
+
 
 end
